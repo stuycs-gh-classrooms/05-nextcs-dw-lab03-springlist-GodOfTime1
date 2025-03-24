@@ -63,7 +63,7 @@ void draw() {
     slinky.applySprings(SPRING_LENGTH, SPRING_K);
 
     if (toggles[GRAVITY]) {
-      slinky.applyGravity(earth, GRAVITY);
+      slinky.applyGravity(earth, G_CONSTANT);
     }
     slinky.run(toggles[BOUNCE]);
   }//moving
